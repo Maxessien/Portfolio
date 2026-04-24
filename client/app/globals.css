@@ -2,10 +2,10 @@
 
 :root {
   /* Light Mode */
-  --main-primary: #ffffff;
-  --main-primary-light: #f5f6f8;
-  --main-secondary: #000000;
-  --main-secondary-light: #333333;
+  --main-primary: #ededed;
+  --main-primary-light: #d3d3d3;
+  --main-secondary: #111111;
+  --main-secondary-light: #363636;
   --text-primary: #030e28;
   --text-primary-light: #0a1b41;
   --text-secondary: #475569;
@@ -15,12 +15,12 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark Mode (Requested Base) */
-    --main-primary: #030e28;
-    --main-primary-light: #0a1b41;
-    --main-secondary: #000000;
-    --main-secondary-light: #1a1a1a;
-    --text-primary: #ffffff;
-    --text-primary-light: #e2e8f0;
+    --main-primary: #111111;
+    --main-primary-light: #363636;
+    --main-secondary: #030e28;
+    --main-secondary-light: #0a1b41;
+    --text-primary: #ededed;
+    --text-primary-light: #d3d3d3;
     --text-secondary: #94a3b8;
     --text-secondary-light: #cbd5e1;
   }
