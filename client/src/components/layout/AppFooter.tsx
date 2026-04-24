@@ -8,20 +8,20 @@ const AppFooter = () => {
       <div>
         <LogoTitleCombo />
         <div className="flex text-4xl mt-3 font-semibold gap-2 items-center justify-start">
-          <a href="https://github.com/Maxessien">
+          <a target="_blank" href="https://github.com/Maxessien">
             <FaGithub />
           </a>
-          <a href="https://wa.me/2348114537444">
+          <a target="_blank" href="https://wa.me/2348114537444">
             <FaWhatsapp />
           </a>
-          <a href="https://linkedin.com">
+          <a target="_blank" href="https://www.linkedin.com/in/max-essien-83324227a">
             <FaLinkedin />
           </a>
         </div>
       </div>
       <div>
         <h3 className="font-semibold text-xl text-left my-2">Quick Links</h3>
-        <nav className="flex w-full justify-left flex-col gap-3 font-medium text-lg items-center">
+        <nav className="flex w-full justify-start flex-col gap-3 font-medium text-lg items-start">
           <Link className="hover:text-(--text-primary-light)" href={"/"}>
             Home
           </Link>

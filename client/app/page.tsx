@@ -1,4 +1,5 @@
 import Hero from "@/src/components/home/Hero"
+import Projects from "@/src/components/home/Projects"
 import Skills from "@/src/components/home/Skills"
 
 
@@ -7,6 +8,7 @@ const HomePage = () => {
     <section className="w-full">
       <Hero />
       <Skills />
+      <Projects />
     </section>
   )
 }

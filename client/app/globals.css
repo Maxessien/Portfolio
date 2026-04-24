@@ -2,12 +2,12 @@
 
 :root {
   /* Light Mode */
-  --main-primary: #ededed;
-  --main-primary-light: #d3d3d3;
-  --main-secondary: #0c214e;
-  --main-secondary-light: #0e2e75;
-  --text-primary: #111111;
-  --text-primary-light: #363636;
+  --main-primary: #ffffff;
+  --main-primary-light: #f8fafc;
+  --main-secondary: #f1f5f9;
+  --main-secondary-light: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-primary-light: #334155;
   --text-secondary: #475569;
   --text-secondary-light: #64748b;
 }

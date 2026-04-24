@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       <motion.div
         initial={{ y: 25, opacity: 0.7 }}
-        animate={{ y: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeIn" }}
         className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6"
       >
