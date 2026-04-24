@@ -4,10 +4,10 @@
   /* Light Mode */
   --main-primary: #ededed;
   --main-primary-light: #d3d3d3;
-  --main-secondary: #111111;
-  --main-secondary-light: #363636;
-  --text-primary: #030e28;
-  --text-primary-light: #0a1b41;
+  --main-secondary: #0c214e;
+  --main-secondary-light: #0e2e75;
+  --text-primary: #111111;
+  --text-primary-light: #363636;
   --text-secondary: #475569;
   --text-secondary-light: #64748b;
 }
@@ -15,9 +15,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark Mode (Requested Base) */
-    --main-primary: #111111;
+    --main-primary: #060606;
     --main-primary-light: #363636;
-    --main-secondary: #030e28;
+    --main-secondary: #0a0c12;
     --main-secondary-light: #0a1b41;
     --text-primary: #ededed;
     --text-primary-light: #d3d3d3;
@@ -31,4 +31,5 @@ body {
     min-height: 540px;
     background: var(--main-primary);
     color: var(--text-primary);
+    overflow-x: hidden;
 }
