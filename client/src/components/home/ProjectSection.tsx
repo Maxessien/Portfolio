@@ -44,14 +44,14 @@ const ProjectCard = ({
   );
 };
 
-const Projects = () => {
+const ProjectsSection = () => {
   return (
     <section className="w-full mx-auto max-w-7xl px-3 py-15">
       <header className="flex justify-between items-center gap-2 mb-12">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center">
           My Projects
         </h2>
-        <Link className="font-semibold text-xl" href={"/"}>
+        <Link className="font-semibold text-xl" href={"/projects"}>
           View More
         </Link>
       </header>
@@ -63,7 +63,7 @@ const Projects = () => {
         />
         <ProjectCard
           snapShot="/mxsend.png"
-          navLocation="/"
+          navLocation="/projects/mxsend"
           title="MxSend - Mobile and desktop app for file sharing"
         />
       </div>
@@ -71,4 +71,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsSection;

@@ -1,10 +1,11 @@
+import AppFooter from "@/src/components/layout/AppFooter";
 import AppHeader from "@/src/components/layout/AppHeader";
+import TopLoader from "@/src/components/reusable/TopLoader";
 import type { Metadata } from "next";
 import { WindowSizeListener } from "../src/components/WindowSizeListener";
 import { QueryProvider } from "../src/providers/QueryProvider";
 import { ReduxProvider } from "../src/providers/ReduxProvider";
 import "./globals.css";
-import AppFooter from "@/src/components/layout/AppFooter";
 
 export const metadata: Metadata = {
   title: "Max Essien",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <QueryProvider>
           <ReduxProvider>
             <WindowSizeListener />
+            <TopLoader />
             <div className="flex h-full w-full flex-col">
               <AppHeader />
               <main className="flex-1">{children}</main>
