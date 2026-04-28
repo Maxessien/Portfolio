@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { WindowSizeListener } from "../src/components/WindowSizeListener";
 import { QueryProvider } from "../src/providers/QueryProvider";
 import { ReduxProvider } from "../src/providers/ReduxProvider";
+import { ToastContainer } from "react-toastify";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -29,6 +30,12 @@ export default function RootLayout({
               <main className="flex-1">{children}</main>
               <AppFooter />
             </div>
+            <ToastContainer
+              position="top-center"
+              pauseOnHover
+              newestOnTop
+              theme="colored"
+            />
           </ReduxProvider>
         </QueryProvider>
       </body>

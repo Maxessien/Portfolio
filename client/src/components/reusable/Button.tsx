@@ -2,9 +2,9 @@ import { ButtonType } from "../types";
 
 const interfaces = {
   primary:
-    "bg-(--main-primary) text-(--text-primary-light) hover:bg-(--main-primary-light)",
+    "text-(--text-primary-light) bg-(--main-secondary-light) hover:bg-(--main-secondary)",
   secondary:
-    "text-(--text-primary-light) shadow-[0px_0.4px_10px_-7px_black] bg-(--main-secondary-light) hover:bg-(--main-secondary)",
+    "bg-(--main-primary) shadow-[0px_0.4px_10px_-7px_black] text-(--text-primary-light) hover:bg-(--main-primary-light)",
   tertiary:
     "bg-transparent text-(--main-primary) border-[2px] border-(--main-primary)",
 };

@@ -10,7 +10,7 @@ const ProjectPage = () => {
             </h2>
             <div className="flex flex-col gap-4">
                 <ProjectLinks navLocation="/projects/mxsend" title="MxSend - Mobile and desktop app for file sharing" />
-                <ProjectLinks navLocation="/projects/imgenc" title="Image Text Encoder - Web App for encoding text messages in images" />
+                <ProjectLinks navLocation="/projects/imgenc" title="Pixel Cipher - Web App for encoding text messages in images" />
                 <ProjectLinks navLocation="/projects/pdftotext" title="PDF to Text - Web App for converting PDF documents into raw text" />
                 <ProjectLinks navLocation="/projects/cloudinary" title="Offline Cloudinary - Local media management and storage tool for developers" />
                 <ProjectLinks navLocation="/projects/vdltube" title="Vdl Tube - Video platform and streaming application" />

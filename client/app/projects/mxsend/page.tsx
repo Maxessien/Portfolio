@@ -11,9 +11,6 @@ const MxSendPage = () => {
         <Link href="/projects" className="inline-flex items-center gap-2 mb-8 text-(--text-secondary) hover:text-(--text-primary) transition-colors font-medium">
           <FaArrowLeft /> Back to Projects
         </Link>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-(--text-primary)">
-          MxSend
-        </h1>
         <MxSendJsx />
       </div>
     </section>

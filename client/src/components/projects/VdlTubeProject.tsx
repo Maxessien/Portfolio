@@ -57,7 +57,7 @@ const VdlTubeProject = () => {
       }
 
       stacks={stacks}
-      liveLink="https://vdl-tube-v2.vercel.app/"
+      liveLink="https://vdltube.vercel.app/"
       liveLinkText="Explore VDL Tube Live"
     />
   );

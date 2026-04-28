@@ -3,7 +3,7 @@
 
 import { RootState } from "@/src/store";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter } from "nextjs-toploader/app";
 import { useEffect, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useSelector } from "react-redux";

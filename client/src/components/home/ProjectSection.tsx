@@ -3,8 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { } from "nextjs-toploader";
+import { useRouter } from "nextjs-toploader/app";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../reusable/Button";
 
@@ -48,10 +47,10 @@ const ProjectsSection = () => {
   return (
     <section className="w-full mx-auto max-w-7xl px-3 py-15">
       <header className="flex justify-between items-center gap-2 mb-12">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center">
           My Projects
         </h2>
-        <Link className="font-semibold text-xl" href={"/projects"}>
+        <Link className="font-semibold text-lg sm:text-xl" href={"/projects"}>
           View More
         </Link>
       </header>

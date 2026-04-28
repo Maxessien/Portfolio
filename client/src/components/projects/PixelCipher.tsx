@@ -6,7 +6,7 @@ import {
 } from "@dev.icons/react";
 import ProjectLayout from "./ProjectLayout";
 
-const ImageEncoderProject = () => {
+const PixelCipher = () => {
   const stacks = [
     { title: "React", icon: <ReactIcon className="text-4xl" /> },
     { title: "TypeScript", icon: <TypescriptIcon className="text-4xl" /> },
@@ -16,7 +16,7 @@ const ImageEncoderProject = () => {
 
   return (
     <ProjectLayout
-      title="Image Text Encoder"
+      title="Pixel Cipher"
       description="A full-stack TypeScript application that implements steganography to hide secret text messages within images using LSB (Least Significant Bit) encoding. The system allows users to encode messages into images and decode them back, with the encoded images appearing visually identical to the original."
       
       technicalOverview={
@@ -74,10 +74,10 @@ const ImageEncoderProject = () => {
       }
 
       stacks={stacks}
-      liveLink="https://image-encoder-673s.onrender.com/"
+      liveLink="https://pixelcipher-qfyk.onrender.com/"
       liveLinkText="View Website"
     />
   );
 };
 
-export default ImageEncoderProject;
+export default PixelCipher;

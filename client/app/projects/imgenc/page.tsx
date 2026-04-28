@@ -1,6 +1,6 @@
 
 
-import ImageEncoderProject from "@/src/components/projects/ImageEncoderProject";
+import PixelCipherProject from "@/src/components/projects/PixelCipher";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -11,10 +11,7 @@ const ImageEncoderPage = () => {
         <Link href="/projects" className="inline-flex items-center gap-2 mb-8 text-(--text-secondary) hover:text-(--text-primary) transition-colors font-medium">
           <FaArrowLeft /> Back to Projects
         </Link>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-(--text-primary)">
-          Image Text Encoder
-        </h1>
-        <ImageEncoderProject />
+        <PixelCipherProject />
       </div>
     </section>
   )

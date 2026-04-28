@@ -26,7 +26,7 @@ const ProjectLayout = ({
   liveLinkText = "View Live Demo",
 }: ProjectLayoutProps) => {
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-8 bg-(--main-primary-light) border border-(--main-secondary-light) rounded-xl shadow-lg">
+    <div className="max-w-4xl mx-auto px-3 py-5 sm:p-6 space-y-8 bg-(--main-primary-light) border border-(--main-secondary-light) rounded-xl shadow-lg">
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-(--text-primary)">
           {title}
@@ -52,7 +52,7 @@ const ProjectLayout = ({
         </div>
       </div>
 
-      <div className="bg-(--main-primary) rounded-lg p-6 border border-(--main-secondary-light)">
+      <div className="bg-(--main-primary) rounded-lg px-3 py-4 sm:p-6 border border-(--main-secondary-light)">
         <h2 className="text-2xl font-semibold text-(--text-primary) mb-6 text-center">
           Stacks
         </h2>
