@@ -56,6 +56,7 @@ const MxSendJsx = () => {
       stacks={stacks}
       liveLink="https://github.com/Maxessien/mx-send-tauri/releases/tag/v1.0.1"
       liveLinkText="View Latest App Releases"
+      snapShotUrl='/mxsend.png'
     />
   );
 };

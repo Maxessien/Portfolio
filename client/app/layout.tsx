@@ -11,6 +11,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Max Essien",
   description: "Max Essien dev portfolio website",
+  icons: {
+    icon: {
+      url: "/max-logo.png",
+      type: "image/jpeg",
+    },
+  },
 };
 
 export default function RootLayout({

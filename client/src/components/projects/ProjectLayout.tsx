@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { JSX, ReactNode } from "react";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -14,6 +15,7 @@ export interface ProjectLayoutProps {
   stacks: Stack[];
   liveLink: string;
   liveLinkText?: string;
+  snapShotUrl: string
 }
 
 const ProjectLayout = ({
@@ -23,11 +25,13 @@ const ProjectLayout = ({
   keyFeatures,
   stacks,
   liveLink,
+  snapShotUrl,
   liveLinkText = "View Live Demo",
 }: ProjectLayoutProps) => {
   return (
     <div className="max-w-4xl mx-auto px-3 py-5 sm:p-6 space-y-8 bg-(--main-primary-light) border border-(--main-secondary-light) rounded-xl shadow-lg">
       <div className="text-center space-y-4">
+        <img className="w-full max-w-3xl mx-auto block" src={snapShotUrl} alt="Snapshot" />
         <h1 className="text-4xl font-bold text-(--text-primary)">
           {title}
         </h1>

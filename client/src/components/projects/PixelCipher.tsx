@@ -1,4 +1,4 @@
-import {
+﻿import {
   Express,
   _React as ReactIcon,
   TailwindIcon,
@@ -18,7 +18,7 @@ const PixelCipher = () => {
     <ProjectLayout
       title="Pixel Cipher"
       description="A full-stack TypeScript application that implements steganography to hide secret text messages within images using LSB (Least Significant Bit) encoding. The system allows users to encode messages into images and decode them back, with the encoded images appearing visually identical to the original."
-      
+      snapShotUrl="/ite.png"
       technicalOverview={
         <div className="space-y-4">
           <div>
@@ -52,7 +52,7 @@ const PixelCipher = () => {
         <ul className="space-y-2 text-(--text-secondary)">
           <li className="flex items-start">
             <span className="text-(--text-primary-light) mr-2">•</span>
-            <span>Hide text messages up to 1500 characters in images</span>
+            <span>Hide text messages in images</span>
           </li>
           <li className="flex items-start">
             <span className="text-(--text-primary-light) mr-2">•</span>
