@@ -20,7 +20,7 @@ const Hero = () => {
         className="relative z-10 flex flex-col items-center justify-center h-full text-center px-3 sm:px-6"
       >
         <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold mb-4 text-(--text-primary) tracking-tight">
-          Hi, I&apos;m Max Essien
+          Max Essien
         </h1>
         <h2 className="text-xl sm:text-2xl text-shadow-sm text-shadow-black md:text-3xl font-semibold mb-6 text-(--text-primary-light)">
           Fullstack Developer
