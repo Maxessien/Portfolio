@@ -1,7 +1,7 @@
 import { JSX } from "react";
-import { ContactHeader } from "./Contact";
-import { MdEmail } from "react-icons/md";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { ContactHeader } from "./Contact";
 
 const LinksItem = ({
   href,
@@ -15,25 +15,28 @@ const LinksItem = ({
   href: string;
 }) => {
   return (
-    <div className="w-full px-3 py-2 rounded-md hover:border-2 hover:border-(--main-secondary) flex justify-start items-center gap-2">
-      <div className="p-3 rounded-md border-(--main-secondary) border-2 text-2xl font-medium">{icon}</div>
-      <a
-        className="flex-1 flex flex-col justify-center items-start text-xl font-medium"
-        href={href}
-	target="_blank"
-      >
-        <span>{title}</span>
-        <span className="text-lg">{info}</span>
-      </a>
-    </div>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex items-start gap-5 p-5 w-full rounded-2xl bg-(--main-primary) border border-(--main-secondary-light) hover:border-(--main-secondary) hover:shadow-lg transition-all duration-300"
+    >
+      <div className="p-4 rounded-xl bg-(--main-secondary) text-(--text-primary) group-hover:scale-110 group-hover:text-(--text-primary-light) transition-all duration-300">
+        <div className="text-3xl">{icon}</div>
+      </div>
+      <div className="flex flex-col flex-1 justify-center">
+        <span className="text-xl font-bold text-(--text-primary) mb-1">{title}</span>
+        <span className="text-(--text-secondary) font-medium text-base group-hover:text-(--text-primary-light) transition-colors">{info}</span>
+      </div>
+    </a>
   );
 };
 
 const ContactLinks = () => {
   return (
-    <section className="w-full px-3 py-5 space-y-3 rounded-md shadow-[0px_0px_10px_-7px_var(--text-primary)] lg:px-5">
+    <div className="w-full p-6 md:p-10 space-y-6 bg-(--main-primary-light) rounded-3xl border border-(--main-secondary-light) shadow-xl h-full">
       <ContactHeader title="Get In Touch" />
-      <div className="space-y-3">
+      <div className="flex flex-col gap-5">
         <LinksItem
           href="mailto:essienmax484@gmail.com"
           icon={<MdEmail />}
@@ -53,7 +56,7 @@ const ContactLinks = () => {
           title="WhatsApp"
         />
       </div>
-    </section>
+    </div>
   );
 };
 

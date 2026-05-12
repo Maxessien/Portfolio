@@ -1,24 +1,24 @@
 "use client"
 
 import {
-    Css3,
-    Express,
-    Figma,
-    FirebaseIcon,
-    GitIcon,
-    Html5,
-    Javascript,
-    MongodbIcon,
-    NextjsIcon,
-    NodejsIcon,
-    Npm,
-    Python,
-    _React as ReactIcon,
-    Rust,
-    Sass,
-    TailwindIcon,
-    Tauri,
-    TypescriptIcon
+  Css3,
+  Express,
+  Figma,
+  FirebaseIcon,
+  GitIcon,
+  Html5,
+  Javascript,
+  MongodbIcon,
+  NextjsIcon,
+  NodejsIcon,
+  Npm,
+  Python,
+  _React as ReactIcon,
+  Rust,
+  Sass,
+  TailwindIcon,
+  Tauri,
+  TypescriptIcon
 } from "@dev.icons/react";
 import { motion } from "framer-motion";
 import { JSX, useEffect, useRef, useState } from "react";
@@ -130,10 +130,10 @@ const Skills = () => {
           <div 
             ref={scrollRef}
             onScroll={checkScroll}
-            className="w-full flex-row flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-x-auto sm:overflow-hidden snap-x snap-mandatory scroll-smooth py-4 px-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="w-full flex-row flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 overflow-x-auto sm:overflow-hidden snap-x snap-mandatory scroll-smooth py-2 md:py-4 px-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
             {skillsList.map((skill, index) => (
-              <div key={index} className="max-w-90 min-w-80 w-full snap-center">
+              <div key={index} className="w-full min-w-80 sm:min-w-50 snap-center">
                 <SkillCard
                   title={skill.title}
                   icon={skill.icon}
