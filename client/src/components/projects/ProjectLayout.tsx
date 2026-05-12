@@ -15,7 +15,7 @@ export interface ProjectLayoutProps {
   stacks: Stack[];
   liveLink: string;
   liveLinkText?: string;
-  snapShotUrl: string
+  snapShotUrl: string[];
 }
 
 const ProjectLayout = ({
@@ -31,10 +31,14 @@ const ProjectLayout = ({
   return (
     <div className="max-w-4xl mx-auto px-3 py-5 sm:p-6 space-y-8 bg-(--main-primary-light) border border-(--main-secondary-light) rounded-xl shadow-lg">
       <div className="text-center space-y-4">
-        <img className="w-full max-w-3xl mx-auto block" src={snapShotUrl} alt="Snapshot" />
-        <h1 className="text-4xl font-bold text-(--text-primary)">
-          {title}
-        </h1>
+        <div className="w-full overflow-x-auto snap-x snap-mandatory flex gap-2 max-w-3xl mx-auto">
+          {snapShotUrl.map((url) => (
+            <div key={url} className="w-full snap-center shrink-0 aspect-video overflow-hidden">
+              <img className="w-full object-contain object-center" src={url} alt="Snapshot" />
+            </div>
+          ))}
+        </div>
+        <h1 className="text-4xl font-bold text-(--text-primary)">{title}</h1>
         <p className="text-lg text-(--text-secondary) leading-relaxed">
           {description}
         </p>
@@ -66,9 +70,7 @@ const ProjectLayout = ({
               key={idx}
               className="flex flex-col items-center justify-center p-4 bg-(--main-primary-light) border border-(--main-secondary-light) rounded-lg shadow-sm hover:-translate-y-1 transition-transform w-32"
             >
-              <div className="mb-3 [&>svg]:w-10 [&>svg]:h-10">
-                {stack.icon}
-              </div>
+              <div className="mb-3 [&>svg]:w-10 [&>svg]:h-10">{stack.icon}</div>
               <span className="text-sm font-medium text-(--text-secondary) text-center">
                 {stack.title}
               </span>

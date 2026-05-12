@@ -18,7 +18,7 @@ const PixelCipher = () => {
     <ProjectLayout
       title="Pixel Cipher"
       description="A full-stack TypeScript application that implements steganography to hide secret text messages within images using LSB (Least Significant Bit) encoding. The system allows users to encode messages into images and decode them back, with the encoded images appearing visually identical to the original."
-      snapShotUrl="/ite.png"
+      snapShotUrl={["/ite/ite2.png", "/ite/ite3.png", "/ite/ite4.png", "/ite/ite.png"]}
       technicalOverview={
         <div className="space-y-4">
           <div>

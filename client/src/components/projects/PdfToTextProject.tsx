@@ -42,7 +42,7 @@ const PdfToTextProject = () => {
       }
       stacks={stacks}
       liveLink="https://pdf-text-extractor-qg9b.onrender.com/"
-      snapShotUrl="/ptt.png"
+      snapShotUrl={["/ptt.png"]}
     />
   );
 };

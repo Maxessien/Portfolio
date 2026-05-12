@@ -55,7 +55,7 @@ const VdlTubeProject = () => {
           </li>
         </ul>
       }
-      snapShotUrl="/vdltube.png"
+      snapShotUrl={[ "/vdl/vdl2.png","/vdl/vdl1.png", "/vdl/vdltube.png"]}
       stacks={stacks}
       liveLink="https://vdltube.vercel.app/"
       liveLinkText="Explore VDL Tube Live"

@@ -46,7 +46,7 @@ const OfflineCloudinary = () => {
       }
       liveLinkText="View NPM registry page"
       title="Offline Cloudinary"
-      snapShotUrl="/offlinecloudinary.png"
+      snapShotUrl={["/offlinecloudinary.png"]}
       description="A Node.js package that emulates Cloudinary's file upload and management functionality locally, eliminating the need for internet access or a Cloudinary account during development and testing. Perfect for developers who need to test file upload functionality without incurring API costs or requiring external dependencies."
     />
   );

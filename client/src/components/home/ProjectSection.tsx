@@ -61,7 +61,7 @@ const ProjectsSection = () => {
           title="Censca Market - Online marketplace for african artisans"
         />
         <ProjectCard
-          snapShot="/mxsend.png"
+          snapShot="/mx/mxsend.png"
           navLocation="/projects/mxsend"
           title="MxSend - Mobile and desktop app for file sharing"
         />
