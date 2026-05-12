@@ -54,7 +54,7 @@ const MxSendJsx = () => {
       }
 
       stacks={stacks}
-      liveLink="https://github.com/Maxessien/mx-send-tauri/releases/tag/v0.1.0"
+      liveLink="https://github.com/Maxessien/mx-send-tauri/releases"
       liveLinkText="View Latest App Releases"
       snapShotUrl={['/mx/mxsend.png', "/mx/mx1.png", "/mx/mx2.png", "/mx/mx3.png"]}
     />
